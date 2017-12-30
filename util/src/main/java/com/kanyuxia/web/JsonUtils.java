@@ -28,9 +28,17 @@ public final class JsonUtils {
   /**
    * 反序列化对象字符串
    */
+  public static <T> T readFromJson(byte[] json, Class<T> clazz) throws IOException {
+    return OBJECTMAPPER.readValue(json, clazz);
+  }
+
+  /**
+   * 反序列化对象字符串
+   */
   public static <T> T readFromJson(String json, Class<T> clazz) throws IOException {
     return OBJECTMAPPER.readValue(json, clazz);
   }
+
 
   /**
    * 反序列化字符串成为对象
