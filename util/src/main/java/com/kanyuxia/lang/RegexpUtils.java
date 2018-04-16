@@ -21,7 +21,7 @@ public final class RegexpUtils {
   /**
    * 验证密码
    */
-  private static final String REGEX_PASSWORD = "^[a-zA-Z0-9]{6,16}$";
+  private static final String REGEX_PASSWORD = "^[a-zA-Z0-9]{5,17}$";
 
   /**
    * 验证手机号

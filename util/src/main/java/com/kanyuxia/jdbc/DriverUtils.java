@@ -45,7 +45,7 @@ public class DriverUtils {
 
   private static void loadProperties() {
     try {
-      InputStream inputStream = DriverUtils.class.getClassLoader().getResourceAsStream("database.properties");
+      InputStream inputStream = DriverUtils.class.getClassLoader().getResourceAsStream("db.properties");
       Properties properties = new Properties();
       properties.load(inputStream);
       driver = (String) properties.get("driver");
